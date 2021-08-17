@@ -1,12 +1,11 @@
-// Definimos nuevos tipos de TS
+// Definimos nuevos tipos (interfaces) de TS llamados Customer
 
-export interface BasicProduct {
+export interface BasicCustomer {
     id: number,
 }
 
-export interface Product extends BasicProduct {
+export interface Customer extends BasicCustomer{
     name: string,
-    description: string,
-    instockQuantity: number,
-    price: number
+    email?: string,
+    password?: string
 }
